@@ -2,7 +2,7 @@
 
 A production-ready data engineering and analytics web application that ingests raw transactional data, processes it through a multi-layer pipeline, and provides real-time insights via an interactive dashboard.
 
-## 🎯 Features
+## Features
 
 - **Data Ingestion**: CSV file upload with schema validation and invalid row detection
 - **Data Cleaning**: Automatic handling of missing values, invalid dates, duplicates, and type conversion
@@ -13,7 +13,7 @@ A production-ready data engineering and analytics web application that ingests r
 - **RESTful API**: Comprehensive API endpoints for data operations and quality metrics
 - **Idempotent Processing**: Prevents duplicate data ingestion with detailed logging
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Backend (FastAPI + Python)
 - **Ingestion Layer**: Parses CSV files, validates schema, detects invalid rows, stores raw data
@@ -76,7 +76,7 @@ flowlytics/
 └── README.md                   # This file
 ```
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 
@@ -129,7 +129,7 @@ flowlytics/
 
    The frontend will be available at `http://localhost:3000`
 
-## 📊 Usage
+##  Usage
 
 ### End-to-End Pipeline Execution
 
@@ -179,13 +179,13 @@ This creates `transactions.csv` with 10,000 rows including:
 3. Click "Upload & Process"
 
 The system will automatically:
-- ✅ Validate CSV schema
-- ✅ Detect and log invalid rows
-- ✅ Remove duplicates
-- ✅ Clean and convert data types
-- ✅ Generate ML-ready features
-- ✅ Calculate data quality metrics
-- ✅ Create aggregated summaries
+- Validate CSV schema
+- Detect and log invalid rows
+- Remove duplicates
+- Clean and convert data types
+- Generate ML-ready features
+- Calculate data quality metrics
+- Create aggregated summaries
 
 #### Step 5: View Results
 
@@ -343,7 +343,7 @@ By default, the application uses SQLite (`flowlytics.db`). To use PostgreSQL:
 
 CORS is configured to allow requests from `http://localhost:3000` and `http://localhost:5173`. To add more origins, update `backend/main.py`.
 
-## 🧪 Data Pipeline Flow
+## Data Pipeline Flow
 
 ### 1. Ingestion Layer
 - **CSV Parsing**: Reads CSV file and validates schema
@@ -398,7 +398,7 @@ All features stored in `feature_engineering` table for ML model training.
 - **Batch Tracking**: Each upload gets a unique batch ID for tracking
 - **Storage**: Metrics stored in `data_quality_metrics` table
 
-## 📊 Dataset Design
+## Dataset Design
 
 ### CSV Format
 The system supports both basic and enhanced CSV formats:
@@ -488,7 +488,7 @@ To test the API endpoints, you can use the interactive API documentation at `htt
 
 The application uses Python's logging module. Logs are output to the console.
 
-## 📝 Data Quality Metrics
+## Data Quality Metrics
 
 ### Understanding Quality Metrics
 
@@ -523,7 +523,7 @@ Data Quality % = ((Total Ingested - Invalid - Duplicates) / Total Ingested) * 10
 Cleaning Success Rate = (Cleaned Records / Total Ingested) * 100
 ```
 
-## 📝 Notes
+## Notes
 
 - The application ensures idempotent data ingestion by checking for duplicates before inserting
 - All date formats are normalized during the cleaning process
@@ -533,7 +533,7 @@ Cleaning Success Rate = (Cleaned Records / Total Ingested) * 100
 - Feature engineering runs automatically after data cleaning
 - Data quality metrics are tracked per batch and aggregated across all batches
 
-## 🤝 Contributing
+## Contributing
 
 This is a production-ready template. Feel free to extend it with:
 - Additional data sources
@@ -543,7 +543,7 @@ This is a production-ready template. Feel free to extend it with:
 - Unit and integration tests
 - Docker containerization
 
-## 📄 License
+## Licence
 
 This project is provided as-is for educational and commercial use.
 
@@ -551,4 +551,4 @@ This project is provided as-is for educational and commercial use.
 
 **Built with ❤️ using FastAPI, React, and modern data engineering practices**
 
-# Flowlytics
+
